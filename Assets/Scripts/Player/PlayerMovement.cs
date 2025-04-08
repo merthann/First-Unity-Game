@@ -49,7 +49,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
             return;
         }
         playerAnimations.SetMoveBoolTransition(true);
-        playerAnimations.SetMoveBoolTransition(moveDirection);
+        playerAnimations.SetMoveAnimation(moveDirection);
 
     }
 
