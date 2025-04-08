@@ -24,6 +24,9 @@ public class PlayerStats : ScriptableObject
     {
         Mana = MaxMana;
         Health = MaxHealth;
+        Level = 1;
+        CurrentExp = 0f;
+        NextLevelExp = InitialNextLevelExp;
     }
 
 }

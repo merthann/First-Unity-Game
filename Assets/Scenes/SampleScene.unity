@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 1452738549}
   - component: {fileID: 1452738554}
   - component: {fileID: 1452738557}
+  - component: {fileID: 1452738558}
   m_Layer: 0
   m_Name: PlayerNinja
   m_TagString: Untagged
@@ -505,6 +506,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c55d8a959d72f4d47821deb6dbbcf48e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: b921857c3b0910b40aa05ad03fd56295, type: 2}
+--- !u!114 &1452738558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452738548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd1e42af6d720845956e9d78413cdad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: b921857c3b0910b40aa05ad03fd56295, type: 2}
