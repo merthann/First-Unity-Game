@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Prop
+    uniqueID: 2385717159
+    locked: 0
   - name: Player
     uniqueID: 3008888371
     locked: 0

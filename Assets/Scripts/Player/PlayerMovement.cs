@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Numerics;
+using Vector2 = UnityEngine.Vector2;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
@@ -16,11 +18,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
         actions = new PlayerActions();
         rb2d = GetComponent<Rigidbody2D>();
         playerAnimations = GetComponent<PlayerAnimations>();
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame

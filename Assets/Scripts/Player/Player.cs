@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
     public class Player : MonoBehaviour
     {
     [Header("Config")]
@@ -17,5 +18,5 @@
         stats.ResetPlayer();
         animations.ResetPlayer();
     }
-    }
+}
 
