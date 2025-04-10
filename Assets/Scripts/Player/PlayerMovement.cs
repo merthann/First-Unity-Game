@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Numerics;
 using Vector2 = UnityEngine.Vector2;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [Header("Config")]
     [SerializeField] private float speed;
