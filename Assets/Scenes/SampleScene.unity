@@ -34004,6 +34004,8 @@ GameObject:
   - component: {fileID: 750251018}
   - component: {fileID: 750251023}
   - component: {fileID: 750251024}
+  - component: {fileID: 750251026}
+  - component: {fileID: 750251025}
   m_Layer: 6
   m_Name: Enemy_GoldRacoon
   m_TagString: Enemy
@@ -34160,7 +34162,7 @@ Transform:
   m_GameObject: {fileID: 750251017}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.62, y: 3.03, z: -0.055170726}
+  m_LocalPosition: {x: 2.26, y: 3.61, z: -0.055170726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34178,11 +34180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9573542650277ed49bd1ed8c47d714b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: Wander
+  initState: Patrol
   states:
-  - ID: Wander
+  - ID: Patrol
     Actions:
-    - {fileID: 750251024}
+    - {fileID: 750251026}
     Transitions: []
 --- !u!114 &750251024
 MonoBehaviour:
@@ -34199,6 +34201,35 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1
   moveRange: {x: 2, y: 2}
+--- !u!114 &750251025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750251017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f283e14b0ddcb34488ac1405b60a645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: -1, y: -2.5, z: 0}
+  - {x: 1, y: 0, z: 0}
+  - {x: 1, y: -4, z: 0}
+--- !u!114 &750251026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750251017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d454a33f67f809b45b68b9d891a3e979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
 --- !u!1 &756367633
 GameObject:
   m_ObjectHideFlags: 0
@@ -40247,8 +40278,9 @@ GameObject:
   - component: {fileID: 1358173820}
   - component: {fileID: 1358173819}
   - component: {fileID: 1358173818}
+  - component: {fileID: 1358173825}
   - component: {fileID: 1358173823}
-  - component: {fileID: 1358173824}
+  - component: {fileID: 1358173826}
   m_Layer: 6
   m_Name: Enemy_Beast
   m_TagString: Enemy
@@ -40405,7 +40437,7 @@ Transform:
   m_GameObject: {fileID: 1358173817}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.81, y: 2.57, z: -0.055170726}
+  m_LocalPosition: {x: -12.86, y: 0.2, z: -0.055170726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40423,13 +40455,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9573542650277ed49bd1ed8c47d714b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: Wander
+  initState: Patrol
   states:
-  - ID: Wander
+  - ID: Patrol
     Actions:
-    - {fileID: 1358173824}
+    - {fileID: 1358173826}
     Transitions: []
---- !u!114 &1358173824
+--- !u!114 &1358173825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40438,12 +40470,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1358173817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1ec187296f54c7c89f5710bc0519d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f283e14b0ddcb34488ac1405b60a645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 1, y: 0, z: 0}
+  - {x: 5, y: 0, z: 0}
+  - {x: 5, y: -4, z: 0}
+  - {x: 1, y: -4, z: 0}
+--- !u!114 &1358173826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358173817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d454a33f67f809b45b68b9d891a3e979, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
-  wanderTime: 1
-  moveRange: {x: 2, y: 2}
 --- !u!1 &1377048705
 GameObject:
   m_ObjectHideFlags: 0
@@ -41124,7 +41171,7 @@ Transform:
   m_GameObject: {fileID: 1452738548}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.03, y: -1.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42380,6 +42427,8 @@ GameObject:
   - component: {fileID: 1683672591}
   - component: {fileID: 1683672596}
   - component: {fileID: 1683672597}
+  - component: {fileID: 1683672599}
+  - component: {fileID: 1683672598}
   m_Layer: 6
   m_Name: Enemy_Mushroom
   m_TagString: Enemy
@@ -42536,7 +42585,7 @@ Transform:
   m_GameObject: {fileID: 1683672590}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.31, y: 3.76, z: -0.055170726}
+  m_LocalPosition: {x: -14.7, y: 4.74, z: -0.055170726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42554,11 +42603,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9573542650277ed49bd1ed8c47d714b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initState: Wander
+  initState: Patrol
   states:
-  - ID: Wander
+  - ID: Patrol
     Actions:
-    - {fileID: 1683672597}
+    - {fileID: 1683672599}
     Transitions: []
 --- !u!114 &1683672597
 MonoBehaviour:
@@ -42575,6 +42624,35 @@ MonoBehaviour:
   speed: 1.5
   wanderTime: 1
   moveRange: {x: 2, y: 2}
+--- !u!114 &1683672598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683672590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f283e14b0ddcb34488ac1405b60a645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 1, y: 0, z: 0}
+  - {x: -2, y: -3, z: 0}
+  - {x: 3, y: -3, z: 0}
+--- !u!114 &1683672599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683672590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d454a33f67f809b45b68b9d891a3e979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
 --- !u!1001 &1686566811
 PrefabInstance:
   m_ObjectHideFlags: 0
